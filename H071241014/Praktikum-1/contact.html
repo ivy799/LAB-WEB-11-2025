@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">daffa profile</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Info -->
+        <section>
+            <h2>Informasi Kontak</h2>
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <td>daffa@email.com</td>
+                </tr>
+                <tr>
+                    <th>Nomor Telepon</th>
+                    <td>+62 834-5559-7456</td>
+                </tr>
+                <tr>
+                    <th>LinkedIn</th>
+                    <td>linkedin.com/in/daffa-usman</td>
+                </tr>
+                <tr>
+                    <th>Instagram</th>
+                    <td>daffausmannn</td>
+                </tr>
+                <tr>
+                    <th>GitHub</th>
+                    <td>github.com/daffa2222</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Kirim Pesan</h2>
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <fieldset>
+                    <legend class="chat type">Tipe Pesan:</legend>
+                    <label><input type="radio" name="type" value="pertanyaan" required> Pertanyaan</label>
+                    <label><input type="radio" name="type" value="kritik"> Kritik</label>
+                    <label><input type="radio" name="type" value="saran"> Saran</label>
+                    <label><input type="radio" name="type" value="kerjasama"> Kerjasama</label>
+                </fieldset><br>
+
+                <label for="message">Pesan:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+
+                <label><input type="checkbox" required> Saya setuju data saya diproses</label><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Nama Lengkap | <a href="#">Instagram</a> | <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    </footer>
+</body>
+
+</html>
