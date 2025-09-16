@@ -1,0 +1,114 @@
+<!-- ● Header Section: Navigasi menu dengan 4 link (Home, About,Contact) 
+● Logo: Nama website atau inisial 
+● Navigation: Menggunakan tag <nav> dengan list <ul> dan <li> 
+● Footer: Informasi copyright dan link media sosial 
+
+--------------------------------------------
+
+1. Contact Information: 
+○ Tabel informasi kontak menggunakan <table>: 
+■ Email 
+■ Nomor Telepon 
+■ LinkedIn 
+■ Instagram 
+■ GitHub 
+2. Contact Form: 
+○ Form kontak lengkap dengan elemen: 
+■ Input nama (type="text") 
+■ Input email (type="email") 
+■ Input nomor telepon (type="tel") 
+■ Radio button untuk tipe pesan (Pertanyaan/Kritik/Saran/Kerjasama) 
+■ Textarea untuk pesan detail 
+■ Checkbox persetujuan data 
+■ Submit button 
+○ Semua input menggunakan <label> dan atribut required  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <img src="asset/logoWebPorto.png" alt="Logo website" width="50" height="50">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <div class="contact-section">
+    <h1>Contact Information</h1>
+    <table class="contact-table">
+        <tr>
+            <td><strong>Email</strong></td>
+            <td>indiraramayani14@gmail.com</td>
+        </tr>
+        <tr>
+            <td><strong>Nomor Telepon</strong></td>
+            <td>+62 821-3456-7890</td>
+        </tr>
+        <tr>
+            <td><strong>LinkedIn</strong></td>
+            <td>Nothing</td>
+        </tr>
+        <tr>
+            <td><strong>Instagram</strong></td>
+            <td>@indi_rrr</td>
+        </tr>
+        <tr>
+            <td><strong>GitHub</strong></td>
+            <td> indirafix03 </td>
+        </tr>
+    </table>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="#" method="post">
+      <h2>Contact Form</h2>
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+
+      <label>Tipe Pesan:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="tipe" value="Pertanyaan" required> Pertanyaan</label>
+        <label><input type="radio" name="tipe" value="Kritik"> Kritik</label>
+        <label><input type="radio" name="tipe" value="Saran"> Saran</label>
+        <label><input type="radio" name="tipe" value="Kerjasama"> Kerjasama</label>
+      </div>
+
+      <label for="pesan">Pesan Detail:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <label>
+        <input type="checkbox" name="persetujuan" required>
+        Saya menyetujui data saya digunakan untuk keperluan komunikasi.
+      </label>
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>©2025 Indira Ramayani. All rights reserved.</p>
+    <a href="https://www.instagram.com/indi_rrr" target="_blank">Instagram</a>
+    <a href="https://github.com/indirafix03" target="_blank">Github</a>
+    <a href="https://www.youtube.com/@indiraramayani" target="_blank">Youtube</a>
+  </footer>
+</body>
+</html>
