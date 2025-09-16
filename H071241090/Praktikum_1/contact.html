@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact - Ferrari Meilani</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="assets/logo.jpg" alt="FD Logo" class="logo">
+        <a href="index.html" class="logo-text">FD</a>
+      </div>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="sections-grid">
+      <section id="contact-info">
+        <h2>Get In Touch</h2>
+        <p style="margin-bottom: 25px; color: var(--text-secondary);">
+          Feel free to reach out through any of these channels. I'm always excited to connect with fellow developers, discuss projects, or explore collaboration opportunities!
+        </p>
+
+        <table>
+          <tr>
+            <th>Email</th>
+            <td><a href="mailto:ferarri0706@gmail.com">ferarri0706@gmail.com</a></td>
+          </tr>
+          <tr>
+            <th>Phone</th>
+            <td><a href="tel:+6282271464080">0822-7146-4080</a></td>
+          </tr>
+          <tr>
+            <th>LinkedIn</th>
+            <td><a href="https://www.linkedin.com/in/Ferrari-Meilani/" target="_blank">linkedin.com/in/Ferrari-Meilani</a></td>
+          </tr>
+          <tr>
+            <th>Instagram</th>
+            <td><a href="https://www.instagram.com/ferrarimlni/" target="_blank">@ferrarimlni</a></td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="form">
+        <h2>Contact Form</h2>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="tel">Phone Number:</label>
+          <input type="tel" id="tel" name="tel" required>
+
+          <p><strong>Message Type:</strong></p>
+          <div style="margin-bottom: 15px;">
+            <input type="radio" id="question" name="type" value="question" required>
+            <label for="question">Question</label><br>
+            
+            <input type="radio" id="critiques" name="type" value="critiques">
+            <label for="critiques">Critiques</label><br>
+            
+            <input type="radio" id="advice" name="type" value="advice">
+            <label for="advice">Advice</label><br>
+            
+            <input type="radio" id="collab" name="type" value="collab">
+            <label for="collab">Collaboration</label><br>
+          </div>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+
+          <div style="margin: 20px 0;">
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to my data being used for contact purposes</label>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ferrari Meilani (FD). All rights reserved.</p>
+    <p>
+      <a href="https://www.instagram.com/ferrarimlni/">Instagram</a>
+      <a href="https://www.linkedin.com/in/Ferrari-Meilani/">LinkedIn</a>
+      <a href="https://github.com/ferastoro">GitHub</a>
+    </p>
+  </footer>
+</body>
+</html>
