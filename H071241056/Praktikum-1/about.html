@@ -1,0 +1,155 @@
+<!-- ● Header Section: Navigasi menu dengan 4 link (Home, About,Contact) 
+● Logo: Nama website atau inisial 
+● Navigation: Menggunakan tag <nav> dengan list <ul> dan <li> 
+● Footer: Informasi copyright dan link media sosial 
+---------------------------------------------
+
+1. Personal Info Section: 
+Tabel informasi personal lengkap menggunakan <table>: 
+■ Nama Lengkap 
+■ NIM 
+■ Program Studi 
+■ Universitas 
+■ Email 
+■ Tempat, Tanggal Lahir 
+■ Alamat 
+2. Bio Section: 
+○ Deskripsi diri minimal 3 paragraf menggunakan <p> 
+    
+○ Gunakan elemen formatting <strong> dan <em> untuk penekanan 
+3. Education Section: 
+○ Timeline pendidikan menggunakan <dl> (description list) 
+4. Skills Section: 
+○ Daftar keterampilan menggunakan <ul> (unordered list) 
+○ Minimal 3 keterampilan 
+5. Hobbies & Interests: 
+○ List hobi menggunakan <ol> (ordered list)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <img src="asset/logoWebPorto.png" alt="Logo website" width="50" height="50">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="personalInfo">
+    <h1>Personal Info</h1>
+    <table>
+        <tr>
+            <td><strong>Nama</strong></td>
+            <td>Indira Ramayani</td>
+        </tr>
+        <tr>
+            <td><strong>NIM</strong></td>
+            <td>H071241056</td>
+        </tr>
+        <tr>
+            <td><strong>Program Studi</strong></td>
+            <td>Sistem Informasi</td>
+        </tr>
+        <tr>
+            <td><strong>Universitas</strong></td>
+            <td>Universitas Hasanuddin</td>
+        </tr>
+        <tr>
+            <td><strong>Email</strong></td>
+            <td>indiraramayani14@gmail.com</td>
+        </tr>
+        <tr>
+            <td><strong>Tempat, tanggal lahir</strong></td>
+            <td>Selayar, 30 Desember 2025</td>
+        </tr>
+        <tr>
+            <td><strong>Alamat</strong></td>
+            <td>JL. Sahabat</td>
+        </tr>
+    </table>
+</div>
+
+
+  <!-- BIO SECTION -->
+  <section class="about-section">
+    <p>
+      Hello! My name is <strong>Indira Ramayani</strong>, a third-semester student at Hasanuddin University, 
+      majoring in Information Systems. This semester, I chose to focus on <em>UI/UX design</em> because of my strong interest 
+      in the creative and design field. For me, design is not only about aesthetics, but also about how to create 
+      meaningful and user-friendly experiences.
+    </p>
+    <p>
+      In terms of experience, I once developed a prototype music player application called 
+      <strong>AID Music</strong>, a collaborative project with my peers. Additionally, I used to manage a 
+      <em>YouTube channel</em> that grew to thousands of subscribers before I decided to pause it due to academic commitments. 
+      These experiences taught me the importance of <strong>creativity</strong>, <strong>collaboration</strong>, and adaptability.
+    </p>
+    <p>
+      Outside of academics, I enjoy reading novels and watching movies. Some of my favorite novels are 
+      <em>Goodbye Days</em>, <em>I Saw the Same Dream Again</em>, and <em>Minimarket yang Merepotkan</em>. 
+      I also love watching films late at night, with my top three favorites being 
+      <strong>Shutter Island</strong>, <strong>Inception</strong>, and <strong>Parasite</strong>. 
+      These hobbies help broaden my perspective and inspire my creativity in design.
+    </p>
+  </section>
+
+  <!-- SKILLS - EDUCATION - HOBBIES -->
+  <section class="about-cards">
+    <!-- SKILLS -->
+    <div class="card">
+      <h3>SKILLS</h3>
+      <ul>
+        <li>UI Design (Canva)</li>
+        <li>Programming (Python, Java)</li>
+        <li>Creative Writing & Content Creation</li>
+      </ul>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="card">
+      <h3>EDUCATION</h3>
+      <dl>
+        <dt>SD</dt>
+        <dd>SD INPRES BENTENG II</dd>
+        <dt>SMP</dt>
+        <dd>SMP NEGERI 1 SELAYAR</dd>
+        <dt>SMA</dt>
+        <dd>SMA NEGERI 1 SELAYAR</dd>
+        <dt>Universitas</dt>
+        <dd>Universitas Hasanuddin - Sistem Informasi</dd>
+      </dl>
+    </div>
+
+    <!-- HOBBIES -->
+    <div class="card">
+      <h3>HOBBIES</h3>
+      <ol>
+        <li>Watching Movies</li>
+        <li>Reading Novels</li>
+        <li>Exploring Social Media Trends</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>©2025 Indira Ramayani. All rights reserved.</p>
+    <a href="https://www.instagram.com/indi_rrr" target="_blank">Instagram</a>
+    <a href="https://github.com/indirafix03" target="_blank">Github</a>
+    <a href="https://www.youtube.com/@indiraramayani" target="_blank">Youtube</a>
+  </footer>
+</body>
+</html>
