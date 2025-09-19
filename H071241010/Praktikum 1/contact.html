@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Mahasiswa - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">PORTOFOLIO</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-info">
+    <h2>Informasi Kontak</h2>
+    <table>
+      <tr>
+        <th>Email</th>
+        <td>farelfarelbb@gmail.com</td>
+      </tr>
+      <tr>
+        <th>Nomor Telepon</th>
+        <td>+629 533 824 9048</td>
+      </tr>
+      <tr>
+        <th>LinkedIn</th>
+        <td><a href="#">-</a></td>
+      </tr>
+      <tr>
+        <th>Instagram</th>
+        <td><a href="https://www.instagram.com/frrll.agl/">@frrll.agl</a></td>
+      </tr>
+      <tr>
+        <th>GitHub</th>
+        <td><a href="https://github.com/liebertsenku">liebertsenku</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="contact-form">
+    <h2>Formulir Kontak</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+
+      <p>Tipe Pesan:</p>
+      <label><input type="radio" name="tipe" value="Pertanyaan" required> Pertanyaan</label>
+      <label><input type="radio" name="tipe" value="Kritik"> Kritik</label>
+      <label><input type="radio" name="tipe" value="Saran"> Saran</label>
+      <label><input type="radio" name="tipe" value="Kerjasama"> Kerjasama</label>
+
+      <label for="pesan">Pesan Detail:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <label>
+        <input type="checkbox" name="persetujuan" required>
+        Saya menyetujui bahwa data yang dikirimkan adalah benar.
+      </label>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ahmad Farel Algifhari. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/frrll.agl/">Instagram</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="https://github.com/liebertsenku">GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>

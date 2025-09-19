@@ -1,0 +1,215 @@
+/*hal index */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.active{
+  color:#f39c12
+}
+header .logo {
+  color:antiquewhite;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #f39c12;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: #ecf0f1;
+}
+.hero .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #2c3e50;
+}
+.hero h1 {
+  margin: 20px 0 10px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+.hero p {
+  font-style: italic;
+  color: #555;
+}
+
+.stats {
+  padding: 40px 20px;
+  text-align: center;
+}
+.stats h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+.stats table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background: #ece7e7;
+}
+.stats th, .stats td {
+  border: 1px solid #fff;
+  padding: 12px 20px;
+}
+.stats th {
+  background: #ead7c1;
+  color: #625959;
+  text-align: left;
+}
+
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+}
+footer .social-links a {
+  color: #f39c12;
+  text-decoration: none;
+}
+footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/*hal about*/
+.personal-info, .bio, .education, .skills, .hobbies {
+  padding: 40px 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.personal-info table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 5px 5px 6px rgba(60, 60, 60, 0.1);
+}
+.personal-info th, .personal-info td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+.personal-info th {
+  background: #2c3e50;
+  color: #fff;
+  width: 30%;
+}
+
+.bio{
+  background-color: #ececec;
+}
+
+.bio p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.education dl {
+  background: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #f39c12;
+}
+.education dt {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.education dd {
+  margin: 0 0 15px 20px;
+}
+
+.skills ul, .hobbies ol {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 5px 5px 6px rgba(0,0,0,0.1);
+}
+.skills li, .hobbies li {
+  margin: 8px;
+}
+
+/*hal contact*/
+.contact-info, .contact-form {
+  padding: 40px 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-info table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 5px 5px 6px rgba(0,0,0,0.1);
+}
+.contact-info th, .contact-info td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+.contact-info th {
+  background: #2c3e50;
+  color: #fff;
+  width: 30%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+.contact-form label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+.contact-form input, 
+.contact-form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 8px;
+}
+.contact-form button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.contact-form button:hover {
+  background: #f39c12;
+}
