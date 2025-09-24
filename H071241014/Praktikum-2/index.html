@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KopiKu - Nikmati Kopi Terbaikmu</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-[#3E2723] bg-[#FAF3E0]">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-[#3E2723] text-[#FAF3E0] shadow-md fixed w-full top-0 z-10">
+    <h1 class="text-2xl font-bold tracking-wide">☕ KopiKu</h1>
+    <ul class="flex space-x-6">
+      <li><a href="#home" class="hover:text-[#D7A86E]">Beranda</a></li>
+      <li><a href="#about" class="hover:text-[#D7A86E]">Tentang</a></li>
+      <li><a href="#features" class="hover:text-[#D7A86E]">Produk</a></li>
+      <li><a href="#testimoni" class="hover:text-[#D7A86E]">Testimoni</a></li>
+      <li><a href="#contact" class="hover:text-[#D7A86E]">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-[#FAF3E0] text-center px-6 bg-cover bg-center" 
+           style="background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+      <h2 class="text-5xl font-bold mb-4">Nikmati Kopi Premium Setiap Hari</h2>
+      <p class="text-lg mb-6 max-w-2xl">
+        KopiKu menghadirkan biji kopi pilihan dari nusantara. Diproses dengan sepenuh hati untuk menjaga cita rasa autentik khas Indonesia.
+      </p>
+      <a href="#contact" class="px-6 py-3 bg-[#D7A86E] text-[#3E2723] font-semibold rounded-lg shadow hover:bg-[#F3E5AB] transition">
+        Pesan Sekarang
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-8 bg-[#FAF3E0] text-center">
+    <h3 class="text-3xl font-bold mb-6 text-[#3E2723]">Tentang KopiKu</h3>
+    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" 
+         alt="Barista membuat kopi" class="mx-auto rounded-lg shadow-md mb-6 max-h-72 object-cover">
+    <p class="max-w-2xl mx-auto text-[#5D4037]">
+      KopiKu lahir dari semangat untuk menghadirkan kopi berkualitas yang bisa dinikmati siapa saja. 
+      Kami percaya setiap cangkir punya cerita: dari petani, proses sangrai, hingga kamu yang menikmatinya. 
+      Dengan KopiKu, kamu bukan hanya minum kopi, tapi juga merasakan pengalaman yang hangat dan bermakna.
+    </p>
+  </section>
+
+  <!-- Produk / Features -->
+  <section id="Features" class="py-10 px-10 bg-white">
+  <h3 class="text-3xl font-bold text-center mb-10 text-black">Produk Unggul Kami</h3>
+  <div class="grid md:grid-cols-3 gap-10 text-center">
+
+  <div class="p-10 bg-gray-200 rounded-lg">
+  <img src="assets/espreso.jpg"
+  alt="espreso"
+  class="mx-auto mb-4 rounded-lg h-40 w-40 object-cover">
+  <h4 class="font-semibold mb-2 text-black-200">Espreso</h4>
+  <p class="text-black">Rasa kuat,aroma pekat</p>
+  </div>
+
+  <div class="p-10 bg-gray-200 rounded-lg">
+  <img src="assets/espreso.jpg"
+  alt="espreso"
+  class="mx-auto mb-4 rounded-lg h-40 w-40 object-cover">
+  <h4 class="font-semibold mb-2 text-black-200">Espreso</h4>
+  <p class="text-black">Rasa kuat,aroma pekat</p>
+  </div>
+
+
+  <div class="p-10 bg-gray-200 rounded-lg">
+  <img src="assets/espreso.jpg"
+  alt="espreso"
+  class="mx-auto mb-4 rounded-lg h-40 w-40 object-cover">
+  <h4 class="font-semibold mb-2 text-black-200">Espreso</h4>
+  <p class="text-black">Rasa kuat,aroma pekat</p>
+
+
+  </div>
+  </section>
+
+ 
+   
+
+  <!-- Testimoni -->
+  <section id="testimoni" class="py-20 px-8 bg-[#FAF3E0]">
+    <h3 class="text-3xl font-bold text-center mb-10 text-[#3E2723]">Apa Kata Mereka?</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="assets/tika.jpg" 
+             alt="Tika" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <p class="italic text-[#5D4037]">"KopiKu bikin pagi saya penuh semangat. Rasa kopinya beda, lebih hangat di hati."</p>
+        <h4 class="mt-4 font-semibold text-[#3E2723]">- Tika, pengusaha batu bata</h4>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <img src="assets/zalfa.jpg" 
+             alt="Zalfa" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <p class="italic text-[#5D4037]">"Tempat ngopi favorit saya sekarang. Desain simpel, kopi luar biasa."</p>
+        <h4 class="mt-4 font-semibold text-[#3E2723]">- Zalfa, pengusaha wallet</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Form -->
+  <section id="contact" class="py-20 px-8 bg-white text-center">
+    <h3 class="text-3xl font-bold mb-6 text-[#3E2723]">Hubungi Kami</h3>
+    <img src="https://img.icons8.com/ios-filled/100/5D4037/phone.png" 
+         alt="Kontak" class="mx-auto mb-6">
+    <form class="max-w-md mx-auto space-y-4">
+      <input type="text" placeholder="Nama" class="w-full p-3 border rounded focus:ring-2 focus:ring-[#D7A86E]">
+      <input type="email" placeholder="Email" class="w-full p-3 border rounded focus:ring-2 focus:ring-[#D7A86E]">
+      <textarea placeholder="Pesan" class="w-full p-3 border rounded focus:ring-2 focus:ring-[#D7A86E]"></textarea>
+      <button class="w-full bg-[#5D4037] text-white py-3 rounded hover:bg-[#3E2723] transition">
+        Kirim
+      </button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3E2723] text-[#FAF3E0] py-6 text-center">
+    <p>© 2025 KopiKu. Semua Hak Dilindungi.</p>
+    <div class="mt-2 space-x-4">
+      <a href="https://www.instagram.com/kopiku.skarda?igsh=MXBlMzRqc3hiNWEzOQ==" class="hover:text-[#D7A86E]">Instagram</a>
+    </div>
+  </footer>
+
+ 
+
+</body>
+</html>
