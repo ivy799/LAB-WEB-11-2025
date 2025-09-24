@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bakso Firandi</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'oswald': ['Oswald', 'sans-serif'],
+            'lilita': ['Lilita One', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-yellow-50 font-oswald">
+  <!-- Navbar -->
+  <div class="bg-red-950 flex text-white p-8 justify-between items-center fixed top-0 left-0 w-full z-50">
+    <div class="text-2xl font-bold text-end text-orange-100">
+      <h1>Bakso</h1>
+      <h1>FRD</h1>
+    </div>
+    <nav>
+      <ul class="flex space-x-4 text-lg">
+        <li class="p-2 hover:text-red-400 transition duration-300"><a href="#beranda">Beranda</a></li>
+        <span class="text-white pt-2">|</span>
+        <li class="p-2 hover:text-red-400 transition duration-300"><a href="#tentang-kami">Tentang Kami</a></li>
+        <span class="text-white pt-2">|</span>
+        <li class="p-2 hover:text-red-400 transition duration-300"><a href="#menu">Menu</a></li>
+        <span class="text-white pt-2">|</span>
+        <li class="p-2 hover:text-red-400 transition duration-300"><a href="#pesanan">Pesan</a></li>
+        <span class="text-white pt-2">|</span>
+        <li class="p-2 hover:text-red-400 transition duration-300"><a href="#testi">Testimoni</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Beranda -->
+  <section class="text-center pt-32">
+    <header class="bg-gradient-to-r from-red-100 via-white to-red-700 shadow-gray-500 shadow-md p-8 ">
+      <h1 class="text-4xl font-bold text-red-700 text-shadow">BAKSO FIRANDI</h1>
+      <p>“Bakso Homemade. Rasa No. 1, Sehat No. 1”</p>
+    </header>
+    <div id="beranda" class="flex m-12 font-lilita p-12 justify-center">
+      <img src="asset/foto 2.jpg" alt="Gambar Bakso" class="size-80 radius border-white border-4 rounded-2xl">
+      <div class="pl-8 pt-8 text-left">
+        <h1 class="text-8xl">BEST SELLER !</h1>
+        <p class="font-serif">Bakso Mercon dengan Isian Melimpah</p>
+        <a href="#pesanan">
+          <button class="bg-red-600 text-white p-2 mt-10 rounded-lg hover:bg-red-900 text-5xl">Pesan Sekarang</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave -->
+  <div class="left-0 w-full overflow-hidden">
+    <svg viewBox="0 0 1200 300" preserveAspectRatio="none" class="relative w-full md:h-80">
+      <path d="M0,192Q80,170,160,181Q240,192,320,192Q400,192,480,170Q560,148,640,138Q720,128,800,149Q880,170,960,192Q1040,214,1120,192Q1200,170,1280,192L1280,300L0,300Z"
+        class="fill-current text-blue-950"></path>
+    </svg>
+  </div>
+
+  <!-- Tentang Kami -->
+  <section id="tentang-kami" class="bg-blue-950 text-white pl-9">
+    <h1 class="text-6xl font-lilita">Tentang Kami</h1>
+    <div class="flex mt-12 gap-12 items-start text-2xl">
+      <div class="flex-1">
+        <h2 class="font-bold">Since 2022</h2>
+        <p>Setiap butir bakso kami dibuat sendiri dengan tangan, menggunakan 100% daging sapi segar pilihan...</p>
+        <h2 class="font-bold mt-12">HomeMade</h2>
+        <p class="mb-12">Kami menjunjung tinggi arti "homemade"...</p>
+        <h2 class="font-bold">Varian Rasa</h2>
+        <p>Kami menyediakan banyak varian rasa kaya rempah yang cocok untuk lidah Indonesia</p>
+      </div>
+      <div class="flex-1 flex flex-col space-y-4 items-center">
+        <img src="asset/foto 11.jpg" alt="daging ayam" class="w-80 h-32 object-cover rounded-lg shadow-md">
+        <img src="asset/foto 12.jpg" alt="adonan bakso" class="w-80 h-32 object-cover rounded-lg shadow-md">
+        <img src="asset/foto 10.jpg" alt="daging sapi" class="w-80 h-32 object-cover rounded-lg shadow-md">
+        <img src="asset/foto 14.jpg" alt="daging sapi" class="w-80 h-32 object-cover rounded-lg shadow-md">
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave -->
+  <div class="left-0 w-full overflow-hidden">
+    <svg viewBox="0 0 1200 300" preserveAspectRatio="none" class="relative w-full md:h-80 transform rotate-180">
+      <path d="M0,192Q80,170,160,181Q240,192,320,192Q400,192,480,170Q560,148,640,138Q720,128,800,149Q880,170,960,192Q1040,214,1120,192Q1200,170,1280,192L1280,300L0,300Z"
+        class="fill-current text-blue-950"></path>
+    </svg>
+  </div>
+
+  <!-- Menu -->
+  <section id="menu" class="py-16 -8 ">
+    <h1 class="text-8xl font-lilita text-center mb-12 text-red-800">Menu</h1>
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto justify-center ">
+      <!-- Card 1 -->
+      <div class="bg-yellow-100 rounded-xl shadow-lg p-6 w-64 flex flex-col items-center">
+        <img src="asset/foto 2.jpg" alt="Bakso Mercon" class="w-32 h-32 object-cover rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Bakso Mercon</h2>
+        <p class="text-gray-700 text-center mb-2">Bakso isi cabai, pedas dan nikmat.</p>
+        <span class="text-red-700 font-bold">Rp 25.000</span>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-yellow-100 rounded-xl shadow-lg p-6 w-64 flex flex-col items-center">
+        <img src="asset/foto 5.jpg" alt="Mie Goreng Ori" class="w-32 h-32 object-cover rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Mie Goreng Ori</h2>
+        <p class="text-gray-700 text-center mb-2">Menggunakan mie telur premium, bumbu spesial.</p>
+        <span class="text-red-700 font-bold">Rp 20.000</span>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-yellow-100 rounded-xl shadow-lg p-6 w-64 flex flex-col items-center">
+        <img src="asset/foto 8.jpg" alt="Bakso Ayam" class="w-32 h-32 object-cover rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Bakso Ayam</h2>
+        <p class="text-gray-700 text-center mb-2">Bakso ayam pilihan, tekstur lembut.</p>
+        <span class="text-red-700 font-bold">Rp 20.000</span>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-yellow-100 rounded-xl shadow-lg p-6 w-64 flex flex-col items-center">
+        <img src="asset/foto 7.jpg" alt="Mie Goreng Mini" class="w-32 h-32 object-cover rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Mie Goreng Mini</h2>
+        <p class="text-gray-700 text-center mb-2">Mie goreng sehat porsi Anak</p>
+        <span class="text-red-700 font-bold">Rp 17.000</span>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-yellow-100 rounded-xl shadow-lg p-6 w-64 flex flex-col items-center">
+        <img src="asset/foto 9.jpg" alt="Bakso Beranak" class="w-32 h-32 object-cover rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Bakso Beranak</h2>
+        <p class="text-gray-700 text-center mb-2">Bakso isi suwiran ayam dan kuah yang gurih.</p>
+        <span class="text-red-700 font-bold">Rp 22.000</span>
+      </div>
+    </div>
+
+    <!-- Frozen Food -->
+    <div class="flex justify-center w-full">
+      <div class="bg-yellow-100 flex flex-row items-center justify-center p-6 mt-10 rounded-xl shadow-lg w-full">
+        <h1 class="text-4xl font-bold mr-60 font-lilita">Frozen Food</h1>
+        <div class="flex flex-row gap-8 p-5">
+          <div class="flex flex-col items-center">
+            <img src="asset/foto 6.jpg" alt="Bakso Tahu Frozen" class="w-56 h-32 object-cover rounded-lg mb-4">
+            <h2 class="text-xl font-bold mb-2">Bakso Tahu</h2>
+            <p class="text-red-700 font-bold">35.000</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <img src="asset/foto 4.jpg" alt="Adonan Bakso Frozen" class="w-56 h-32 object-cover rounded-lg mb-4">
+            <h2 class="text-xl font-bold mb-2">Adonan Bakso</h2>
+            <p class="text-red-700 font-bold">45.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pesanan -->
+  <section id="pesanan" class="bg-blue-950 text-white p-8">
+    <h1 class="text-4xl text-center mb-12">Order Form</h1>
+    <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg text-black">
+      <div class="mb-4">
+        <label for="nama" class="block text-lg font-semibold mb-2">Nama:</label>
+        <input type="text" id="nama" name="nama" class="w-full p-2 border border-gray-300 rounded-lg" required>
+      </div>
+      <div class="mb-4">
+        <label for="tlp" class="block text-lg font-semibold mb-2">Nomor WA:</label>
+        <input type="tel" id="tlp" name="tlp" class="w-full p-2 border border-gray-300 rounded-lg" required>
+      </div>
+      <div class="mb-4">
+        <h1 class="text-3xl font-bold text-center mb-8 text-red-700">Pesanan</h1>
+        <fieldset class="mb-6">
+          <legend class="text-xl font-semibold mb-4">Pilih Menu:</legend>
+          <div class="flex flex-col gap-4">
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Bakso Mercon" class="accent-red-600"> Bakso Mercon
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Bakso Beranak" class="accent-red-600"> Bakso Beranak
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Bakso Ayam" class="accent-red-600"> Bakso Ayam
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Mie Goreng Ori" class="accent-red-600"> Mie Goreng Ori
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Mie Goreng Mini" class="accent-red-600"> Mie Goreng Mini
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Bakso Tahu Frozen" class="accent-red-600"> Bakso Tahu Frozen
+            </label>
+            <label class="flex items-center gap-2">
+              <input type="checkbox" name="menu" value="Adonan Bakso Frozen" class="accent-red-600"> Adonan Bakso Frozen
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="mb-6">
+        <label for="catatan" class="block mb-2 font-semibold">Catatan:</label>
+        <textarea id="catatan" name="catatan" rows="3" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"></textarea>
+      </div>
+      <button type="submit" class="bg-red-600 text-white p-2 rounded-lg hover:bg-red-900 w-full text-lg font-semibold">Kirim Pesanan</button>
+    </form>
+  </section>
+
+  <!-- Testimoni -->
+  <section id="testi" class="py-16 bg-yellow-50 m-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center text-red-800 mb-12">Komentar Pembeli</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-red-100">
+          <h3 class="font-bold text-red-700 text-lg mb-2">Mie Goreng Original</h3>
+          <p class="text-gray-600 mb-3">"Mienya kenyal dan bumbu meresap dengan baik"</p>
+          <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-red-100">
+          <h3 class="font-bold text-red-700 text-lg mb-2">Bakso Mercon</h3>
+          <p class="text-gray-600 mb-3">"Baksonya terasa dagingnya dan cabainya begitu melimpah"</p>
+          <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-red-100">
+          <h3 class="font-bold text-red-700 text-lg mb-2">Mie Goreng Mini</h3>
+          <p class="text-gray-600 mb-3">"Anak saya sangat suka"</p>
+          <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-sm border border-red-100">
+          <h3 class="font-bold text-red-700 text-lg mb-2">Bakso Tahu</h3>
+          <p class="text-gray-600 mb-3">"Baksonya sangat padat didalam tahunya"</p>
+          <div class="flex text-yellow-400">⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="bg-red-950 text-white text-center p-4 flex flex-col md:flex-row justify-between items-center">
+      &copy; 2025 Bakso Firandi. All rights reserved.
+      <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="https://www.instagram.com/indi_rrr?igsh=dG94YWc4MTBoejFj" target="_blank" class="hover:text-red-400 transition duration-300">Instagram</a>
+        <a href="https://www.facebook.com/bakso.firandi?mibextid=ZbWKwL" target="_blank" class="hover:text-red-400 transition duration-300">Facebook</a>
+        <a href="https://www.canva.com/design/DAGzrardndo/i1NSILTnalEyjuEJSv2YRA/edit?utm_content=DAGzrardndo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="hover:text-red-400 transition duration-300">WhatsApp</a>
+      </div>
+      <div>
+        <p>WA : 0812-3456-7890</p>
+        <p>JL. Jendral Ahmad Yani</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
