@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portfolio Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="logo">AB</div>
+        <nav class="nav">
+          <ul class="menu">
+            <li><a href="index.html" class="">Home</a></li>
+            <li><a href="about.html" class="">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="section">
+          <h2>Informasi Kontak</h2>
+          <div class="table-wrap">
+            <table>
+              <tbody>
+                <tr><th>Email</th><td>aditgreen3@gmail.com</td></tr>
+                <tr><th>Nomor Telepon</th><td>081341180174</td></tr>
+                <tr><th>LinkedIn</th><td>linkedin.com/in/adityabahri</td></tr>
+                <tr><th>Instagram</th><td>@adityabhri_</td></tr>
+                <tr><th>GitHub</th><td>github.com/AdityaBahri</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Form Kontak</h2>
+          <form action="#" method="post">
+            <div>
+              <label for="nama">Nama</label>
+              <input id="nama" name="nama" type="text" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="tel">Nomor Telepon</label>
+              <input id="tel" name="tel" type="tel" required>
+            </div>
+            <div>
+              <label>Tipe Pesan</label>
+              <div class="form-row">
+                <label><input type="radio" name="tipe" value="Pertanyaan" required> Pertanyaan</label>
+                <label><input type="radio" name="tipe" value="Kritik"> Kritik</label>
+                <label><input type="radio" name="tipe" value="Saran"> Saran</label>
+                <label><input type="radio" name="tipe" value="Kerjasama"> Kerjasama</label>
+              </div>
+            </div>
+            <div>
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="5" required></textarea>
+            </div>
+            <div>
+              <label><input type="checkbox" name="consent" required> Saya menyetujui pemrosesan data ini.</label>
+            </div>
+            <button class="btn" type="submit">Kirim</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div>© 2025 AB Portfolio. All rights reserved.</div>
+        <div>Media sosial: <a href="#">LinkedIn</a> · <a href="#">Instagram</a> · <a href="#">GitHub</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
