@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Design UI/UX</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-neutral-950 text-neutral-200 font-['Figtree']">
+    <header>
+      <nav
+        class="fixed inset-x-0 top-0 flex h-16 justify-between items-center px-4 sm:px-8 lg:px-40 bg-black/70 backdrop-blur-md"
+      >
+        <div class="flex gap-2 items-center">
+          <span class="text-orange-500 font-extrabold text-xl sm:text-2xl"
+            >AB</span
+          >
+          <span class="hidden sm:block">UI/UX Studio</span>
+        </div>
+        <div class="hidden sm:flex items-center gap-4">
+          <a
+            href="#beranda"
+            class="px-2 py-2 rounded-md hover:bg-white/20 text-sm sm:text-base"
+            >Beranda</a
+          >
+          <a
+            href="#tentang"
+            class="px-2 py-2 rounded-md hover:bg-white/20 text-sm sm:text-base"
+            >Tentang</a
+          >
+          <a
+            href="#layanan"
+            class="px-2 py-2 rounded-md hover:bg-white/20 text-sm sm:text-base"
+            >Layanan</a
+          >
+          <a
+            href="#portfolio"
+            class="px-2 py-2 rounded-md hover:bg-white/20 text-sm sm:text-base"
+            >Portfolio</a
+          >
+          <a
+            href="#kontak"
+            class="px-2 py-2 rounded-md hover:bg-white/20 text-sm sm:text-base"
+            >Kontak</a
+          >
+        </div>
+
+        <details class="sm:hidden">
+          <summary class="flex items-center cursor-pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </summary>
+
+          <div
+            class="absolute right-0 mx-4 rounded-xl ring ring-neutral-800 bg-black/90 text-white p-4"
+          >
+            <a
+              href="#beranda"
+              class="block px-4 py-2 rounded-md hover:bg-white/20"
+            >
+              Beranda
+            </a>
+            <a
+              href="#tentang"
+              class="block px-4 py-2 rounded-md hover:bg-white/20"
+              >Tentang</a
+            >
+            <a
+              href="#layanan"
+              class="block px-4 py-2 rounded-md hover:bg-white/20"
+              >Layanan</a
+            >
+            <a
+              href="#portfolio"
+              class="block px-4 py-2 rounded-md hover:bg-white/20"
+              >Portfolio</a
+            >
+            <a
+              href="#kontak"
+              class="block px-4 py-2 rounded-md hover:bg-white/20"
+              >Kontak</a
+            >
+          </div>
+        </details>
+      </nav>
+    </header>
+
+    <main id="beranda">
+      <section class="pt-24 sm:pt-32">
+        <div class="px-4 sm:px-8 lg:px-40 grid-cols-2 grid gap-12 items-center">
+          <div>
+            <h1 class="text-4xl sm:text-5xl lg:text-[42px] font-extrabold">
+              Saya merancang <span class="text-orange-500">UI/UX</span> yang
+              mudah dipakai untuk kebutuhan apapun
+            </h1>
+            <p class="mt-4 text-neutral-400 text-lg sm:text-2xl lg:text-[26px]">
+              Hai, nama saya Adit, UI/UX designer freelance
+            </p>
+            <div class="mt-4 flex gap-4">
+              <a
+                href="#kontak"
+                class="bg-orange-500 px-4 py-2 rounded-md hover:bg-orange-500/90 text-sm sm:text-base"
+                >Mulai Konsultasi</a
+              >
+              <a
+                href="#portfolio"
+                class="px-4 py-2 rounded-md ring-1 ring-neutral-500 hover:bg-neutral-500 text-sm sm:text-base"
+                >Lihat Portfolio</a
+              >
+            </div>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=1600&auto=format&fit=crop"
+              alt="Desain UI/UX"
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="tentang" class="mt-24 px-4 sm:px-8 lg:px-40 scroll-mt-16">
+        <h2 class="font-bold text-white text-2xl sm:text-3xl lg:text-[26px]">
+          Tentang Saya
+        </h2>
+        <p class="mt-4 text-neutral-400 max-w-3xl text-base sm:text-lg">
+          Saya fokus pada desain yang sistematis dan terukur: riset ringan
+          sebelum desain, iterasi cepat, dan dokumentasi rapi untuk memudahkan
+          developer. Saya terbiasa bekerja lintas industri—edukasi, kesehatan,
+          e-commerce, dan layanan profesional—dengan prioritas pada kejelasan,
+          aksesibilitas, dan konsistensi design system.
+        </p>
+      </section>
+
+      <section id="layanan" class="mt-24 px-4 sm:px-8 lg:px-40 scroll-mt-16">
+        <h2 class="font-bold text-white text-2xl sm:text-3xl lg:text-[26px]">
+          Layanan
+        </h2>
+        <div class="grid mt-6 gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="p-6 rounded-xl bg-neutral-900 ring-1 ring-neutral-800">
+            <h3 class="font-semibold text-white text-lg sm:text-xl">
+              Audit & Riset UI/UX
+            </h3>
+            <p class="mt-2 text-neutral-400 text-sm sm:text-base">
+              Analisis alur, heuristik, dan insight cepat dari data atau sesi
+              pengguna.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-neutral-900 ring-1 ring-neutral-800">
+            <h3 class="font-semibold text-white text-lg sm:text-xl">
+              Audit & Riset UI/UX
+            </h3>
+            <p class="mt-2 text-neutral-400 text-sm sm:text-base">
+              Analisis alur, heuristik, dan insight cepat dari data atau sesi
+              pengguna.
+            </p>
+          </div>
+          <div class="p-6 rounded-xl bg-neutral-900 ring-1 ring-neutral-800">
+            <h3 class="font-semibold text-white text-lg sm:text-xl">
+              Audit & Riset UI/UX
+            </h3>
+            <p class="mt-2 text-neutral-400 text-sm sm:text-base">
+              Analisis alur, heuristik, dan insight cepat dari data atau sesi
+              pengguna.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="mt-24 px-4 sm:px-8 lg:px-40 scroll-mt-16">
+        <h2 class="font-bold text-white text-2xl sm:text-3xl lg:text-[26px]">
+          Portfolio
+        </h2>
+        <p class="mt-4 text-neutral-400 text-base sm:text-lg">
+          Contoh proyek representatif. Detail lengkap dapat dibahas saat
+          konsultasi.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <article class="rounded-xl overflow-hidden ring-1 ring-neutral-800">
+            <img
+              src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=800&auto=format&fit=crop"
+              alt=""
+              class="object-cover w-full h-48"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg sm:text-xl">Onboarding App</h3>
+              <p class="mt-1 text-sm sm:text-base text-neutral-400">
+                Drop-off onboarding turun 23% setelah perbaikan alur & empty
+                state.
+              </p>
+            </div>
+          </article>
+          <article class="rounded-xl overflow-hidden ring-1 ring-neutral-800">
+            <img
+              src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=800&auto=format&fit=crop"
+              alt=""
+              class="object-cover w-full h-48"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg sm:text-xl">Onboarding App</h3>
+              <p class="mt-1 text-sm sm:text-base text-neutral-400">
+                Drop-off onboarding turun 23% setelah perbaikan alur & empty
+                state.
+              </p>
+            </div>
+          </article>
+          <article class="rounded-xl overflow-hidden ring-1 ring-neutral-800">
+            <img
+              src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=800&auto=format&fit=crop"
+              alt=""
+              class="object-cover w-full h-48"
+            />
+            <div class="p-4">
+              <h3 class="font-semibold text-lg sm:text-xl">Onboarding App</h3>
+              <p class="mt-1 text-sm sm:text-base text-neutral-400">
+                Drop-off onboarding turun 23% setelah perbaikan alur & empty
+                state.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="kontak" class="mt-24 px-4 sm:px-8 lg:px-40 scroll-mt-16">
+        <h2 class="font-bold text-white text-2xl sm:text-3xl lg:text-[26px]">
+          Kontak
+        </h2>
+        <p class="mt-4 text-neutral-400 text-base sm:text-lg">
+          Ceritakan produk dan tujuan yang ingin dicapai. Saya akan balas dengan
+          estimasi ruang lingkup dan waktu.
+        </p>
+        <form class="mt-6 space-y-4 max-w-lg">
+          <input
+            type="text"
+            placeholder="Nama"
+            class="w-full px-4 py-2 rounded-md bg-neutral-800 text-white placeholder-neutral-500"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full px-4 py-2 rounded-md bg-neutral-800 text-white placeholder-neutral-500"
+          />
+          <textarea
+            rows="6"
+            placeholder="Ringkas kebutuhan (platform, fitur utama, timeline)"
+            class="w-full px-4 py-2 rounded-md bg-neutral-800 text-white placeholder-neutral-500"
+          ></textarea>
+          <button
+            class="bg-orange-400 px-4 py-2 rounded-md text-white hover:bg-orange-500/90"
+          >
+            Kirim
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="mt-24 px-4 sm:px-8 lg:px-40 border-t border-neutral-800/60">
+      <div class="my-8 flex justify-between text-neutral-400 text-sm">
+        <span>© 2025 AB UI/UX Studio. Semua hak cipta dilindungi.</span>
+        <div class="flex gap-4">
+          <a
+            href="https://www.instagram.com/adityabhri_"
+            class="hover:text-white"
+            >Instagram</a
+          >
+          <a href="https://dribbble.com/acee10" class="hover:text-white"
+            >Dribbble</a
+          >
+          <a href="#" class="hover:text-white">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
