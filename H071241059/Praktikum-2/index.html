@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SanCar Showroom - Temukan Mobil Impian Anda</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-white bg-gray-900">
+    <nav
+      class="sticky top-0 z-50 bg-gray-900 shadow-lg bg-opacity-80 backdrop-blur-sm"
+    >
+      <div class="container px-6 py-4 mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-bold text-white">
+            <a href="#">San<span class="text-blue-500">Car</span></a>
+          </div>
+          <div class="hidden space-x-6 md:flex">
+            <a
+              href="#beranda"
+              class="text-gray-300 transition duration-300 hover:text-blue-500"
+              >Beranda</a
+            >
+            <a
+              href="#tentang"
+              class="text-gray-300 transition duration-300 hover:text-blue-500"
+              >Tentang</a
+            >
+            <a
+              href="#fitur"
+              class="text-gray-300 transition duration-300 hover:text-blue-500"
+              >Layanan</a
+            >
+            <a
+              href="#kontak"
+              class="text-gray-300 transition duration-300 hover:text-blue-500"
+              >Kontak</a
+            >
+          </div>
+          <div class="md:hidden"></div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <header
+        id="beranda"
+        class="relative flex items-center justify-center h-screen"
+      >
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <img
+          src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop"
+          alt="Sports Car"
+          class="absolute inset-0 object-cover w-full h-full"
+        />
+        <div class="relative z-10 px-4 text-center">
+          <h1 class="mb-4 text-4xl font-extrabold leading-tight md:text-6xl">
+            Temukan Mobil Impian Anda di SanCar
+          </h1>
+          <p class="max-w-2xl mx-auto mb-8 text-lg text-gray-300 md:text-xl">
+            Showroom dengan koleksi mobil terbaik, harga kompetitif, dan
+            pelayanan profesional.
+          </p>
+          <a
+            href="#fitur"
+            class="px-8 py-3 text-lg font-bold text-white transition duration-300 ease-in-out transform bg-blue-600 rounded-full hover:bg-blue-700 hover:scale-105"
+          >
+            Pelajari Lebih Lanjut
+          </a>
+        </div>
+      </header>
+
+      <section id="tentang" class="py-20 bg-gray-800">
+        <div class="container px-6 mx-auto text-center">
+          <h2 class="mb-4 text-3xl font-bold">Tentang SanCar Showroom</h2>
+          <div class="w-24 h-1 mx-auto mb-8 bg-blue-500"></div>
+          <p class="max-w-3xl mx-auto leading-relaxed text-gray-400">
+            SanCar adalah showroom mobil terpercaya yang berdedikasi untuk
+            memberikan pengalaman membeli mobil yang luar biasa. Sejak berdiri,
+            kami berkomitmen untuk menyediakan kendaraan berkualitas tinggi dari
+            berbagai merek ternama. Visi kami adalah menjadi mitra terpercaya
+            bagi setiap pelanggan dalam perjalanan mereka menemukan mobil yang
+            sempurna.
+          </p>
+        </div>
+      </section>
+
+      <section id="fitur" class="py-20 bg-gray-900">
+        <div class="container px-6 mx-auto">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Layanan Unggulan Kami</h2>
+            <p class="mt-2 text-gray-400">
+              Kami menawarkan lebih dari sekadar mobil.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
+            <div
+              class="p-8 transition duration-300 transform bg-gray-800 rounded-lg hover:-translate-y-2"
+            >
+              <div class="mb-4 text-blue-500">
+                <svg
+                  class="w-12 h-12 mx-auto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 18h.01M4.93 4.93l.01.01M2.25 12H2m19.5 0h.25m-4.5 4.5l-.01.01M4.93 19.07l-.01-.01"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold">Harga Kompetitif</h3>
+              <p class="text-gray-400">
+                Dapatkan penawaran harga terbaik untuk mobil baru dan bekas
+                berkualitas tanpa biaya tersembunyi.
+              </p>
+            </div>
+            <div
+              class="p-8 transition duration-300 transform bg-gray-800 rounded-lg hover:-translate-y-2"
+            >
+              <div class="mb-4 text-blue-500">
+                <svg
+                  class="w-12 h-12 mx-auto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold">Kualitas Terjamin</h3>
+              <p class="text-gray-400">
+                Setiap mobil telah melalui proses inspeksi ketat untuk
+                memastikan kondisi prima dan performa terbaik.
+              </p>
+            </div>
+            <div
+              class="p-8 transition duration-300 transform bg-gray-800 rounded-lg hover:-translate-y-2"
+            >
+              <div class="mb-4 text-blue-500">
+                <svg
+                  class="w-12 h-12 mx-auto"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M12 14a3 3 0 100-6 3 3 0 000 6z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="mb-2 text-xl font-bold">Layanan Konsultasi</h3>
+              <p class="text-gray-400">
+                Tim profesional kami siap membantu Anda memilih mobil yang
+                paling sesuai dengan kebutuhan dan gaya hidup Anda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimoni" class="py-20 bg-gray-800">
+        <div class="container px-6 mx-auto">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Apa Kata Pelanggan Kami</h2>
+            <p class="mt-2 text-gray-400">
+              Kepuasan Anda adalah prioritas kami.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="p-8 bg-gray-900 rounded-lg">
+              <p class="mb-4 text-gray-400">
+                "Pelayanannya sangat memuaskan, staff ramah dan sangat membantu.
+                Saya berhasil mendapatkan mobil keluarga idaman dengan harga
+                yang pas. Terima kasih SanCar!"
+              </p>
+              <p class="font-bold text-white">- Budi Santoso</p>
+            </div>
+            <div class="p-8 bg-gray-900 rounded-lg">
+              <p class="mb-4 text-gray-400">
+                "Pilihan mobilnya sangat lengkap dan berkualitas. Proses
+                pembeliannya juga cepat dan transparan. Sangat direkomendasikan
+                untuk yang sedang cari mobil."
+              </p>
+              <p class="font-bold text-white">- Ani Wijaya</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" class="py-20 bg-gray-900">
+        <div class="container px-6 mx-auto">
+          <div class="mb-12 text-center">
+            <h2 class="text-3xl font-bold">Hubungi Kami</h2>
+            <p class="mt-2 text-gray-400">
+              Dapatkan informasi lebih lanjut atau jadwalkan test drive.
+            </p>
+          </div>
+          <div class="max-w-2xl p-8 mx-auto bg-gray-800 rounded-lg">
+            <form action="#" method="POST">
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div>
+                  <label
+                    for="name"
+                    class="block text-sm font-medium text-gray-300"
+                    >Nama Lengkap</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="block w-full p-3 mt-1 text-white bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-sm font-medium text-gray-300"
+                    >Alamat Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="block w-full p-3 mt-1 text-white bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  />
+                </div>
+              </div>
+              <div class="mt-6">
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-300"
+                  >Pesan Anda</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="block w-full p-3 mt-1 text-white bg-gray-700 border-gray-600 rounded-md shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                ></textarea>
+              </div>
+              <div class="mt-6 text-center">
+                <button
+                  type="submit"
+                  class="px-8 py-3 text-lg font-bold text-white transition duration-300 bg-blue-600 rounded-full hover:bg-blue-700"
+                >
+                  Kirim Pesan
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 border-t border-gray-700">
+      <div class="container px-6 py-8 mx-auto">
+        <div
+          class="flex flex-col items-center justify-between text-center md:flex-row md:text-left"
+        >
+          <div class="mb-4 md:mb-0">
+            <h3 class="text-xl font-bold">
+              San<span class="text-blue-500">Car</span>
+            </h3>
+            <p class="text-gray-400">
+              Jalan Mannuruki No. 123, Makassar, Indonesia
+            </p>
+          </div>
+          <div class="flex mb-4 space-x-4 md:mb-0">
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-facebook">Facebook</i></a
+            >
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-twitter">Twitter</i></a
+            >
+            <a href="#" class="text-gray-400 hover:text-white"
+              ><i class="fab fa-instagram">Instagram</i></a
+            >
+          </div>
+        </div>
+        <div
+          class="pt-4 mt-8 text-sm text-center text-gray-500 border-t border-gray-700"
+        >
+          <p>&copy; 2025 SanCar Showroom. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
