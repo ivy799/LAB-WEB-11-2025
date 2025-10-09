@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-emerald-950">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>UNO Game</title>
+</head>
+
+<body class="bg-radial from-emerald-800 to-emerald-950 flex flex-col items-center justify-center min-h-screen text-white">
+  <div id="game" class="w-full max-w-3xl p-4 rounded-2xl">
+    <h1 class="text-3xl font-bold text-center mb-4">UNO Game 🎴</h1>
+        <!-- COLOR PICKER OVERLAY -->
+    <div id="color-picker" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+      <div class="bg-white text-black p-6 rounded-2xl shadow-lg text-center">
+        <h2 class="text-lg font-bold mb-4">Choose a color</h2>
+        <div class="flex justify-center gap-4">
+          <button
+            class="color-btn bg-red-500 w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_red]"
+            data-color="red"
+          ></button>
+          <button
+            class="color-btn bg-blue-500 w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_blue]"
+            data-color="blue"
+          ></button>
+          <button
+            class="color-btn bg-green-400 w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_green]"
+            data-color="green"
+          ></button>
+          <button
+            class="color-btn bg-yellow-400 w-12 h-12 rounded-full transition-all duration-300 hover:scale-110 hover:shadow-[0_0_15px_yellow]"
+            data-color="yellow"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="balance" class="text-center mb-4 text-xl">Balance: $5000</div>
+
+    <div id="discard" class="flex flex-col justify-center items-center mb-6">
+      <div id="current-color" class="mb-6 text-xl font-bold px-6 py-3 rounded-lg" style="background-color: rgba(0,0,0,0.5);">
+        Playable Color: <span id="color-display" class="font-extrabold">-</span>
+      </div>
+      <div id="top-card" class="w-30 h-45 flex items-center justify-center rounded-xl bg-gray-200 text-black font-bold">--</div>
+    </div>
+
+    <div id="wager-section" class="text-center mb-4">
+        <label class="block mb-2 text-lg">Enter your wager ($100–balance):</label>
+        <input id="wager-input" type="number" min="100" class="bg-white border text-black rounded-lg p-1 w-32 text-center">
+        <button id="set-wager-btn" class="bg-orange-500 px-3 py-1 rounded-lg hover:bg-orange-600 ml-2">Set</button>
+        <button id="start-btn" class="mt-3 bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600 text-white hidden">Start Game</button>
+        <div id="wager-display" class="mt-2 text-xl font-semibold hidden"></div>
+    </div>
+
+    <div id="player-hand" class="flex justify-center gap-2 mb-6 flex-wrap"></div>
+    
+    <div class="flex justify-center gap-4 mb-4">
+      <button id="draw-btn" class="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed">Draw</button>
+      <button id="uno-btn" class="bg-yellow-400 px-4 py-2 rounded-lg text-black font-semibold hover:bg-yellow-500">UNO!</button>
+    </div>
+
+    <div id="message" class="text-center text-lg mb-2 min-h-[28px] font-semibold"></div>
+    <div id="bot-hand" class="flex justify-center gap-2 mb-4 flex-wrap"></div>
+    <p class="text-center text-sm mb-6">
+      Bot has <span id="bot-count">7</span> cards
+    </p>
+    <div class="flex justify-center mt-4">
+      <button id="call-uno-btn" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg hidden">
+        Call UNO!
+      </button>
+    </div>
+
+
+
+    <div class="text-center mt-6">
+      <button id="restart-btn" class="hidden bg-red-500 px-4 py-2 rounded-lg hover:bg-red-600">Restart Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
