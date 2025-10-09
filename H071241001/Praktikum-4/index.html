@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNO GAME-!</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan file CSS -->
+    <script src="script.js" defer></script>  <!-- Menghubungkan file JavaScript -->
+</head>
+<body>
+    <!-- Betting Screen: Layar untuk memasukkan taruhan sebelum mulai bermain -->
+    <div id="betting-screen" class="screen active">
+        <h1>Welcome to UNO GAME-!</h1>
+        <p>Your Balance: $<span id="balance-display"></span></p> <!-- Menampilkan saldo -->
+        <input type="number" id="bet-input" placeholder="Enter your bet amount" min="100"> <!-- Input taruhan -->
+        <button id="start-game-btn">Start Game</button> <!-- Tombol mulai game -->
+    </div>
+
+    <!-- Game Board: Layar utama saat permainan berlangsung -->
+    <div id="game-board" class="screen">
+        <h2>Bot's Hand</h2> <!-- Judul area kartu bot -->
+        <div class="hand" id="bot-hand"></div> <!-- Area kartu bot (tertutup) -->
+        <div id="center-area">
+            <div id="deck" class="card card-back"></div> <!-- Tumpukan deck (draw pile) -->
+            <div id="discard-pile"></div> <!-- Tumpukan kartu buangan (discard pile) -->
+            <!-- Pilihan warna, muncul saat main kartu wild -->
+            <div id="choose-color" style="display:none;">
+                <span>Pilih warna:</span>
+                <button class="color-btn" data-color="red" style="background:red; width:30px; height:30px; border-radius:50%;"></button>
+                <button class="color-btn" data-color="yellow" style="background:yellow; width:30px; height:30px; border-radius:50%;"></button>
+                <button class="color-btn" data-color="green" style="background:green; width:30px; height:30px; border-radius:50%;"></button>
+                <button class="color-btn" data-color="blue" style="background:blue; width:30px; height:30px; border-radius:50%;"></button>
+            </div>
+            <!-- Tombol aksi tambahan -->
+            <div id="action-buttons">
+                <button id="pass-btn" style="display:none;">Lewati Giliran</button> <!-- Tombol lewati giliran -->
+                <button id="uno-btn" style="display:none;">UNO!</button>           <!-- Tombol UNO -->
+                <button id="call-uno-btn" style="display:none;">Panggil UNO</button> <!-- Tombol panggil UNO (oleh bot) -->
+            </div>
+        </div>
+        <h2>Your Hand</h2> <!-- Judul area kartu player -->
+        <div class="hand" id="player-hand"></div> <!-- Area kartu player -->
+        <div id="status-text"></div> <!-- Status giliran dan info lainnya -->
+    </div>
+
+    <!-- Game Over Screen: Layar saat saldo habis -->
+    <div id="game-over-screen" class="screen">
+        <h1>Game Over!</h1>
+        <p>Your Balance: $<span id="balance-display"></span></p> <!-- Menampilkan saldo akhir -->
+        <button id="restart-btn">Restart</button> <!-- Tombol restart game -->
+    </div>
+</body>
+</html>
