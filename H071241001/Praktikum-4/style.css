@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c8a2c8; /* Lilac */
+    color: #3d2352; /* Ungu gelap untuk teks */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.screen {
+    display: none; /* Sembunyikan semua layar secara default */
+    text-align: center;
+}
+
+.screen.active {
+    display: block; /* Tampilkan layar yang aktif */
+}
+
+#game-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90vw;
+    height: 90vh;
+    border: 3px solid #b57edc; /* Lilac border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #e6c7f7; /* Lilac lebih muda */
+}
+
+.player-area {
+    padding: 10px;
+}
+
+.hand {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    min-height: 120px;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px #b57edc;
+}
+
+#player-hand .card:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+    box-shadow: 0 4px 16px #b57edc;
+}
+
+.card-back {
+    background-image: url('assets/card_back.png'); /* Pastikan nama file sesuai */
+}
+
+#center-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#deck, #discard-pile {
+    min-width: 80px;
+    min-height: 120px;
+}
+
+#uno-btn {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #b57edc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* Sembunyikan dulu */
+}
+
+#choose-color {
+    margin-top: 10px;
+}
+
+.color-btn {
+    margin: 0 5px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+#action-buttons button {
+    margin: 5px;
+    padding: 8px 18px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #b57edc;
+    color: #fff;
+}
+
+#pass-btn { background: #a084ca; color: #fff; }
+#uno-btn, #call-uno-btn { background: #b57edc; color: #fff; }
