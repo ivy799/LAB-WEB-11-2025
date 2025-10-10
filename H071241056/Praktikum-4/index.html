@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game UNO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="main-layout">
+            <!-- AREA GAME (4 bagian) -->
+            <div class="play-area">
+                <!-- Header -->
+                <header class="game-header">
+                    <div class="balance">Saldo: $<span id="balance">5000</span></div>
+                    <div class="betting-section">
+                        <input type="number" id="betAmount" min="100" max="5000" value="100">
+                        <button id="placeBet">Pasang Taruhan</button>
+                    </div>
+                </header>
+
+                <!-- Area Bot -->
+                <div class="bot-area">
+                    <div class="player-info">
+                        <h3>Bot</h3>
+                        <div class="card-count">Kartu: <span id="botCardCount">7</span></div>
+                    </div>
+                    <div class="hand" id="botHand"></div>
+                </div>
+
+                <!-- Area Tengah -->
+                <div class="middle-area">
+                    <div class="discard-pile" id="discardPile"></div>
+                    <div class="deck" id="drawDeck"></div>
+                </div>
+
+                <!-- Area Player -->
+                <div class="player-area">
+                    <div class="player-info">
+                        <h3>Anda</h3>
+                        <div class="card-count">Kartu: <span id="playerCardCount">7</span></div>
+                    </div>
+                    <div class="hand" id="playerHand"></div>
+                </div>
+
+                <!-- Kontrol Game -->
+                <div class="game-controls">
+                    <button id="unoButton" disabled>UNO!</button>
+                    <button id="callUnoButton" disabled>Panggil UNO!</button>
+                </div>
+
+                <!-- Status -->
+                <div class="game-status">
+                    <div id="gameMessage">Selamat datang! Pasang taruhan untuk memulai.</div>
+                </div>
+            </div>
+        
+            <!-- AREA HISTORY (2 bagian) -->
+            <div class="history-area">
+                <h3>Riwayat Permainan</h3>
+                <div class="action-log" id="actionLog"></div>
+            </div>
+
+            <!-- Modal Pilih Warna -->
+            <div id="colorModal" class="modal">
+                <div class="modal-content">
+                    <h3>Pilih Warna</h3>
+                    <div class="color-selection">
+                        <button class="color-btn" data-color="red"></button>
+                        <button class="color-btn" data-color="blue"></button>
+                        <button class="color-btn" data-color="green"></button>
+                        <button class="color-btn" data-color="yellow"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- GAME OVER OVERLAY -->
+    <div id="gameOverScreen" class="game-over-overlay" style="display: none;">
+    <div class="game-over-content">
+        <h1>💀 GAME OVER 💀</h1>
+        <p>Saldo Anda habis!</p>
+        <button id="restartGameButton">Main Ulang</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
