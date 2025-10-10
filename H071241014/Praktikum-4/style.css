@@ -1,0 +1,324 @@
+/* GLOBAL VARIABLES & RESET  */
+:root {
+    --table-color: #A1866F;
+    --player-area-color: #C2B092;
+    --card-width: 80px;
+    --card-height: 120px;
+    --border-radius: 8px;
+    --highlight-color: #D9C7A1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY AND MAIN LAYOUT */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--table-color);
+    color: #433225;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 100vh;
+    background-color: var(--player-area-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+}
+
+/* PLAYER AREAS */
+.player-area {
+    background-color: #BDAE8E;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+#bot-area h2,
+#player-area h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #5D4B3F;
+}
+
+#player-area .player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #593F28;
+}
+
+.balance-info {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #4B392B;
+}
+
+/* CARDS */
+.hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card {
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--border-radius);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 2px 2px 5px rgba(75, 54, 33, 0.3);
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+#player-hand .card {
+    cursor: pointer;
+}
+
+#player-hand .card:hover {
+    transform: translateY(-20px) scale(1.05);
+    box-shadow: 4px 10px 15px rgba(107, 85, 42, 0.6);
+    z-index: 10;
+}
+
+.card-back {
+    background-image: url('assets/cards/card_back.png');
+    border: 2px solid #6F5441;
+}
+
+/*  GAME TABLE (DECK & DISCARD) */
+#game-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 15px 0;
+    color: #5D4B3F;
+}
+
+.deck-pile {
+    text-align: center;
+    font-weight: 600;
+}
+
+.deck-pile p {
+    margin-bottom: 5px;
+}
+
+#deck {
+    cursor: pointer;
+    border: 3px solid transparent;
+    border-radius: var(--border-radius);
+    transition: border-color 0.3s ease;
+}
+
+#deck.active-turn {
+    border: 3px dashed var(--highlight-color);
+    animation: pulse 1.5s infinite;
+}
+
+#discard-pile .card {
+    border: 3px solid var(--highlight-color);
+}
+
+#status-log {
+    background-color: rgba(75, 54, 33, 0.7);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: center;
+    min-width: 250px;
+    color: var(--highlight-color);
+    box-shadow: 0 0 10px var(--highlight-color);
+}
+
+#uno-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #7E6845;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(126, 104, 69, 0.6);
+    transition: all 0.2s;
+}
+
+#uno-button:hover {
+    background-color: #A18B5A;
+    transform: scale(1.1);
+}
+
+/*  MODALS */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 54, 33, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    color: #4B392B;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #BDAE8E;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #6F5441;
+    color: #4B392B;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1.5px solid #D9C7A1;
+    font-size: 1em;
+    color: #5D4B3F;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #7E6845;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.modal-content button:hover {
+    background-color: #A18B5A;
+}
+
+/* COLOR PICKER */
+.color-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.color-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid #4B392B;
+    transition: transform 0.2s;
+    user-select: none;
+}
+
+.color-box:hover {
+    transform: scale(1.1);
+}
+
+#color-red { background-color: #E74C3C; }
+#color-green { background-color: #2ECC71; }
+#color-blue { background-color: #3498DB; }
+#color-yellow { background-color: #F1C40F; }
+
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(217, 199, 161, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(217, 199, 161, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(217, 199, 161, 0); }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    :root {
+        --card-width: 60px;
+        --card-height: 90px;
+    }
+    #game-container {
+        padding: 10px;
+        max-height: 100vh;
+    }
+    .player-area {
+        min-height: 120px;
+    }
+    #status-log {
+        font-size: 0.9em;
+        padding: 8px 15px;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --card-width: 45px;
+        --card-height: 68px;
+    }
+    body {
+        padding: 0;
+    }
+    #game-table {
+        gap: 15px;
+    }
+    #uno-button {
+        padding: 10px 20px;
+        font-size: 1.2em;
+        bottom: 10px;
+        right: 10px;
+    }
+    .player-area {
+        min-height: 100px;
+    }
+}
