@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
 }
 
 .screen {
@@ -39,27 +40,30 @@ body {
     justify-content: center;
     gap: 10px;
     min-height: 120px;
+    flex-wrap: wrap;
 }
 
 .card {
     width: 80px;
     height: 120px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     border-radius: 8px;
     transition: transform 0.2s;
-    box-shadow: 0 2px 8px #b57edc;
+    box-shadow: 0 2px 8px rgba(181, 126, 220, 0.5);
+    border: 2px solid white;
+    flex-shrink: 0;
 }
 
 #player-hand .card:hover {
     transform: translateY(-20px);
     cursor: pointer;
-    box-shadow: 0 4px 16px #b57edc;
+    box-shadow: 0 4px 16px rgba(181, 126, 220, 0.8);
 }
 
 .card-back {
-    background-image: url('assets/card_back.png'); /* Pastikan nama file sesuai */
+    background-image: url('assets/card_back.png') !important;
 }
 
 #center-area {
@@ -67,22 +71,25 @@ body {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
-#deck, #discard-pile {
+#deck {
     min-width: 80px;
     min-height: 120px;
+    cursor: pointer;
 }
 
-#uno-btn {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    background-color: #b57edc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none; /* Sembunyikan dulu */
+#deck:hover {
+    transform: scale(1.05);
+}
+
+/* KODE BARU DITAMBAHKAN DI SINI */
+#discard-pile {
+    padding: 5px;
+    border-radius: 12px;
+    border: 5px solid transparent;
+    transition: border-color 0.3s ease-in-out;
 }
 
 #choose-color {
@@ -93,6 +100,19 @@ body {
     margin: 0 5px;
     border: 2px solid #fff;
     cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-btn:hover {
+    transform: scale(1.2);
+    border: 3px solid #fff;
+}
+
+#action-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #action-buttons button {
@@ -104,7 +124,81 @@ body {
     cursor: pointer;
     background: #b57edc;
     color: #fff;
+    transition: all 0.3s;
 }
 
-#pass-btn { background: #a084ca; color: #fff; }
-#uno-btn, #call-uno-btn { background: #b57edc; color: #fff; }
+#action-buttons button:hover {
+    background: #9b6bc2;
+    transform: scale(1.05);
+}
+
+#pass-btn { 
+    background: #a084ca; 
+    color: #fff; 
+}
+
+#uno-btn, #call-uno-btn { 
+    background: #b57edc; 
+    color: #fff; 
+}
+
+#betting-screen, #game-over-screen {
+    background: rgba(230, 199, 247, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(181, 126, 220, 0.5);
+}
+
+#betting-screen h1, #game-over-screen h1 {
+    color: #3d2352;
+    margin-bottom: 20px;
+}
+
+#betting-screen input {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #b57edc;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 250px;
+}
+
+#betting-screen button, #game-over-screen button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: #b57edc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+#betting-screen button:hover, #game-over-screen button:hover {
+    background: #9b6bc2;
+    transform: scale(1.05);
+}
+
+#status-text {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3d2352;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card {
+        width: 60px;
+        height: 90px;
+    }
+    
+    #game-board {
+        padding: 10px;
+    }
+    
+    .hand {
+        gap: 5px;
+    }
+}
