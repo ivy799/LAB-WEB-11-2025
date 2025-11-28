@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Sarham - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Sarham San</h1>
+        <ul class="nav-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="actives">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Informasi Kontak</h2>
+        <table class="info-table">
+          <tr>
+            <td>Email</td>
+            <td>
+              <a
+                href="mailto:sarhamkampus@gmail.com"
+                style="color: #1f6feb; text-decoration: none"
+                >sarhamkampus@gmail.com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>Nomor Telepon</td>
+            <td>
+              <a
+                href="https://wa.me/+6289694923810"
+                target="_blank"
+                style="color: #1f6feb; text-decoration: none"
+                >+6289694923810</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td>
+              <a
+                href="https://www.linkedin.com/in/sarham-san-16191a316/"
+                target="_blank"
+                style="color: #1f6feb; text-decoration: none"
+                >Sarham San</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>
+              <a
+                href="https://github.com/llLanisterll"
+                target="_blank"
+                style="color: #1f6feb; text-decoration: none"
+                >llLanisterll</a
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Kirim Pesan</h2>
+        <form action="#" method="POST" class="contact-form">
+          <div>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div>
+            <label for="email">Alamat Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" name="telepon" required />
+          </div>
+          <div>
+            <label>Tipe Pesan</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="tanya"
+                name="tipe_pesan"
+                value="Pertanyaan"
+                required
+              />
+              <label for="tanya">Pertanyaan</label>
+              <input type="radio" id="saran" name="tipe_pesan" value="Saran" />
+              <label for="saran">Saran</label>
+              <input
+                type="radio"
+                id="kerjasama"
+                name="tipe_pesan"
+                value="Kerjasama"
+              />
+              <label for="kerjasama">Kerjasama</label>
+            </div>
+          </div>
+          <div>
+            <label for="pesan">Pesan Detail</label>
+            <textarea id="pesan" name="pesan" rows="5" required></textarea>
+          </div>
+          <div class="checkbox-group">
+            <input type="checkbox" id="setuju" name="setuju" required />
+            <label for="setuju"
+              >Saya setuju data yang saya kirimkan akan digunakan untuk
+              merespons pesan ini.</label
+            >
+          </div>
+          <div>
+            <button type="submit">Kirim Pesan</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Sarham San. All rights reserved.</p>
+      <div class="social-links">
+        <a
+          href="https://www.linkedin.com/in/sarham-san-16191a316/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        | <a href="https://github.com/llLanisterll" target="_blank">GitHub</a> |
+        <a href="https://www.instagram.com/srhmsan/" target="_blank"
+          >Instagram</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
